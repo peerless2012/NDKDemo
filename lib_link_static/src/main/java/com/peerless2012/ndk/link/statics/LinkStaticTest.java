@@ -1,4 +1,4 @@
-package com.peerless2012.ndk.static_link;
+package com.peerless2012.ndk.link.statics;
 
 /**
  * @Author peerless2012
@@ -10,7 +10,7 @@ package com.peerless2012.ndk.static_link;
 public class LinkStaticTest {
 
     static {
-        System.loadLibrary("Main");
+        System.loadLibrary("LinkStatic");
     }
 
     public static native int calculator();

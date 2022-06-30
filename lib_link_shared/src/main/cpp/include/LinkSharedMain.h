@@ -6,15 +6,15 @@
  * @Description
  */
 
-#ifndef JNISTATICLIB_LINKMAIN_H
-#define JNISTATICLIB_LINKMAIN_H
+#ifndef JNISTATICLIB_LINKSHAREDMAIN_H
+#define JNISTATICLIB_LINKSHAREDMAIN_H
 #include <string>
 #include "jni.h"
 #include "HelloWorld.h"
 
 namespace LinkShared {
 
-    class LinkMain {
+    class LinkSharedMain {
 
     public:
         static std::string sayHelloWorld();
@@ -23,4 +23,4 @@ namespace LinkShared {
 
 }
 
-#endif //JNISTATICLIB_LINKMAIN_H
+#endif //JNISTATICLIB_LINKSHAREDMAIN_H

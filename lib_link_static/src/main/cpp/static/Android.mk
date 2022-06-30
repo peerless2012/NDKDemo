@@ -1,5 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 
+include $(CLEAR_VARS)
+
 LOCAL_MODULE := Calculator_static
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/include

@@ -1,4 +1,4 @@
-package com.peerless2012.ndk.shared_link;
+package com.peerless2012.ndk.link.shared;
 
 /**
  * @Author peerless2012
@@ -10,6 +10,9 @@ package com.peerless2012.ndk.shared_link;
 public class LinkSharedTest {
 
     static {
+        System.loadLibrary("Hello");
+        System.loadLibrary("World");
+        System.loadLibrary("HelloWorld");
         System.loadLibrary("LinkShared");
     }
 

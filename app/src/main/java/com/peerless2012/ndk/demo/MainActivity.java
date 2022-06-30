@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import com.peerless2012.ndk.shared_link.LinkSharedTest;
-import com.peerless2012.ndk.static_link.LinkStaticTest;
+import com.peerless2012.ndk.link.shared.LinkSharedTest;
+import com.peerless2012.ndk.link.statics.LinkStaticTest;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

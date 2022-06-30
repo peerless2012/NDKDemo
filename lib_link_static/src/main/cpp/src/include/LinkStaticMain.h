@@ -6,8 +6,8 @@
  * @Description
  */
 
-#ifndef JNISTATICLIB_LINKMAIN_H
-#define JNISTATICLIB_MAIN_H
+#ifndef JNISTATICLIB_LINKSTATICMAIN_H
+#define JNISTATICLIB_LINKSTATICMAIN_H
 
 #include <jni.h>
 #include "Calculator.h"
@@ -17,4 +17,4 @@ namespace LinkStatic {
 
 }
 
-#endif //JNISTATICLIB_LINK_H
+#endif //JNISTATICLIB_LINKSTATICMAIN_H

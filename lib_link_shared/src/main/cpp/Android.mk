@@ -2,8 +2,7 @@
 
 LOCAL_PATH := $(call my-dir)
 include $(call all-makefiles-under,$(LOCAL_PATH))
-#include $(LOCAL_PATH)/hello-world/hello/Android.mk
-#include $(LOCAL_PATH)/hello-world/world/Android.mk
+# 如果少的话用下面明确指定也可以
 #include $(LOCAL_PATH)/hello-world/Android.mk
 
 include $(CLEAR_VARS)

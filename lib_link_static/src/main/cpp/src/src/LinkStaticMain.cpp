@@ -6,10 +6,12 @@
  * @Description
  */
 
-#include "Main.h"
+#include "LinkStaticMain.h"
+#include <jni.h>
 
 extern "C"
-JNIEXPORT jint JNICALL
-Java_com_peerless2012_ndk_static_1link_LinkStaticTest_calculator(JNIEnv *env, jclass clazz) {
+JNIEXPORT jint
+JNICALL
+Java_com_peerless2012_ndk_link_statics_LinkStaticTest_calculator(JNIEnv *env, jclass clazz) {
     return LinkStatic::calculator(LinkStatic::Calculator::numA(), LinkStatic::Calculator::numB());
 }

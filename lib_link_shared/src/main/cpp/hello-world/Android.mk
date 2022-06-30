@@ -17,6 +17,6 @@ LOCAL_SRC_FILES := \
 			$(wildcard $(LOCAL_PATH)/src/*.cpp) \
 		)
 
-LOCAL_SHARED_LIBRARIES := HELLO WORLD
+LOCAL_SHARED_LIBRARIES := Hello World
 
 include $(BUILD_SHARED_LIBRARY)
