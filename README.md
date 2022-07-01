@@ -3,6 +3,8 @@
 
 #### NDK Build
 * [Awesome-Android-NDK](https://github.com/JsonChao/Awesome-Android-NDK)
+* [makefile 其中的函数](https://www.cnblogs.com/fly-fish/archive/2012/05/07/2489349.html)
+* [call all-subdir-makefiles和call all-makefiles-under](https://www.jianshu.com/p/28992a35037e)
 
 #### CMake
 * [awesome-cmake](https://github.com/onqtam/awesome-cmake)

@@ -1,9 +1,6 @@
 #include $(call all-subdir-makefiles)
 
 LOCAL_PATH := $(call my-dir)
-include $(call all-makefiles-under,$(LOCAL_PATH))
-# 如果少的话用下面明确指定也可以
-#include $(LOCAL_PATH)/hello-world/Android.mk
 
 include $(CLEAR_VARS)
 
@@ -21,3 +18,7 @@ LOCAL_SRC_FILES := \
 LOCAL_SHARED_LIBRARIES := HelloWorld
 
 include $(BUILD_SHARED_LIBRARY)
+
+# https://www.jianshu.com/p/28992a35037e
+include $(CLEAR_VARS)
+include $(call all-makefiles-under,$(LOCAL_PATH))

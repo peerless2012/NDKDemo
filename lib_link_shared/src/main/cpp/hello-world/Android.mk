@@ -1,8 +1,4 @@
-#include $(call all-subdir-makefiles)
-
 LOCAL_PATH := $(call my-dir)
-
-include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
 
@@ -20,3 +16,7 @@ LOCAL_SRC_FILES := \
 LOCAL_SHARED_LIBRARIES := Hello World
 
 include $(BUILD_SHARED_LIBRARY)
+
+# https://www.jianshu.com/p/28992a35037e
+include $(CLEAR_VARS)
+include $(call all-makefiles-under,$(LOCAL_PATH))
