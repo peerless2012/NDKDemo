@@ -10,9 +10,6 @@ package com.peerless2012.ndk.link.shared;
 public class LinkSharedTest {
 
     static {
-        System.loadLibrary("Hello");
-        System.loadLibrary("World");
-        System.loadLibrary("HelloWorld");
         System.loadLibrary("LinkShared");
     }
 
