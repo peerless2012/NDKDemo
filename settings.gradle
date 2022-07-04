@@ -16,3 +16,5 @@ rootProject.name = "NDKDemo"
 include ':app'
 include ':lib_link_shared'
 include ':lib_link_static'
+include ':lib_prefab_static'
+include ':lib_prefab_shared'

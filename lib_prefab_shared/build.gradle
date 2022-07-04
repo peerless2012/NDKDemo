@@ -1,36 +1,27 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
 }
 
 android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.peerless2012.ndk.demo"
         minSdk 21
         targetSdk 32
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
-    // https://github.com/google/prefab
-    // https://developer.android.com/studio/build/native-dependencies?hl=zh-cn&buildsystem=ndk-build
+    // https://issuetracker.google.com/issues/120166563?hl=zh-cn
     buildFeatures {
-        prefab true
+        prefabPublishing=true
     }
 
-    flavorDimensions "build"
-
-    productFlavors {
-
-        'ndk' {
-            dimension "build"
-        }
-
-        'cmake' {
-            dimension "build"
+    prefab {
+        aaa {
+            headerOnly true
+            headers "src/main/cpp/include"
         }
     }
 
@@ -45,15 +36,13 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+
 }
 
 dependencies {
+
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
-    implementation project(':lib_link_shared')
-    implementation project(':lib_link_static')
-    implementation project(':lib_prefab_shared')
-    implementation project(':lib_prefab_static')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
