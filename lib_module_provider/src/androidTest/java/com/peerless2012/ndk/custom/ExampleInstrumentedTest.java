@@ -1,4 +1,4 @@
-package com.peerless2012.ndk.prefab_static;
+package com.peerless2012.ndk.custom;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.peerless2012.ndk.prefab_static.test", appContext.getPackageName());
+        assertEquals("com.peerless2012.ndk.custom.test", appContext.getPackageName());
     }
 }

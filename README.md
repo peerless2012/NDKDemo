@@ -9,6 +9,8 @@
 * [call all-subdir-makefiles和call all-makefiles-under](https://www.jianshu.com/p/28992a35037e)
 
 #### CMake
+* [CMake files](https://cmake.org/files/)
+* [CMake release notes](https://cmake.org/cmake/help/latest/release/index.html)
 * [awesome-cmake](https://github.com/onqtam/awesome-cmake)
 * [cmake-examples](https://github.com/ttroy50/cmake-examples)
 * [learning-cmake](https://github.com/Akagi201/learning-cmake)

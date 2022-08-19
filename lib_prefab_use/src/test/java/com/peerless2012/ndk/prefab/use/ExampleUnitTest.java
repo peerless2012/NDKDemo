@@ -1,4 +1,4 @@
-package com.peerless2012.ndk.prefab_static;
+package com.peerless2012.ndk.prefab.use;
 
 import org.junit.Test;
 
