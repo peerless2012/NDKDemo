@@ -45,6 +45,12 @@
             android:layout_height="wrap_content"
             android:text="Custom Lib"/>
 
+        <Button
+            android:id="@+id/main_prefab_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prefab Lib"/>
+
     </LinearLayout>
 
 </FrameLayout>

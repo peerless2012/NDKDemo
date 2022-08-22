@@ -33,7 +33,5 @@ dependencies {
     implementation project(':lib_link_static')
     implementation project(':lib_module_provider')
     implementation project(':lib_module_beneficiary')
-    implementation project(':lib_prefab_static')
-    implementation project(':lib_prefab_shared')
     implementation project(':lib_prefab_use')
 }

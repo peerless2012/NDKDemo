@@ -9,4 +9,10 @@ package com.peerless2012.ndk.prefab.use;
  */
 public class PrefabTest {
 
+    static {
+        System.loadLibrary("Prefab");
+    }
+
+    public static native String prefab(int a, int b);
+
 }

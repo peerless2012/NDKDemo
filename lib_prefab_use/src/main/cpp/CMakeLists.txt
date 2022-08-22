@@ -15,6 +15,6 @@ add_library(${PROJECT_NAME} SHARED ${INCLUDES} ${SOURCES})
 
 find_package(lib_prefab_static REQUIRED CONFIG)
 
-find_package(PrefabShared REQUIRED CONFIG)
+find_package(lib_prefab_shared REQUIRED CONFIG)
 
-target_link_libraries(${PROJECT_NAME} PRIVATE log PrefabShared::PrefabShared)
+target_link_libraries(${PROJECT_NAME} PRIVATE log lib_prefab_static::PrefabFunc lib_prefab_shared::PrefabShared)

@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.peerless2012.module.beneficiary.BeneficiaryTest;
 import com.peerless2012.ndk.link.shared.LinkSharedTest;
 import com.peerless2012.ndk.link.statics.LinkStaticTest;
+import com.peerless2012.ndk.prefab.use.PrefabTest;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.main_share_btn).setOnClickListener(this);
         findViewById(R.id.main_static_btn).setOnClickListener(this);
         findViewById(R.id.main_custom_btn).setOnClickListener(this);
+        findViewById(R.id.main_prefab_btn).setOnClickListener(this);
     }
 
     @Override
@@ -31,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             resultTv.setText("Calculator result = " + LinkStaticTest.calculator());
         } else if (v.getId() == R.id.main_custom_btn) {
             resultTv.setText(BeneficiaryTest.call());
+        } else if (v.getId() == R.id.main_prefab_btn) {
+            resultTv.setText(PrefabTest.prefab(100, 25));
         }
     }
 }
