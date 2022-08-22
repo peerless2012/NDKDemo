@@ -1,5 +1,6 @@
 android {
     compileSdk 33
+    buildToolsVersion '33.0.0'
     defaultConfig {
         minSdk 16
         targetSdk 33
