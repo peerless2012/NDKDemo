@@ -4,6 +4,10 @@ plugins {
 apply from:'../library_build.gradle'
 apply from:'../native_build.gradle'
 
+// Gradle Module Build Order
+// https://stackoverflow.com/a/42349993/3769941
+preBuild.dependsOn(":lib_module_provider:build")
+
 dependencies {
     implementation project(':lib_module_provider')
 }
