@@ -1,0 +1,25 @@
+plugins {
+    id 'com.android.library'
+}
+apply from:'../library_build.gradle'
+apply from:'../native_build.gradle'
+
+android {
+    // https://github.com/google/prefab
+    // https://developer.android.com/studio/build/native-dependencies?hl=zh-cn&buildsystem=ndk-build
+    // https://developer.android.com/studio/releases/gradle-plugin?buildsystem=ndk-build#cpp-references
+    buildFeatures {
+//        prefab true
+        prefabPublishing true
+    }
+
+    prefab {
+        PrefabShared {
+            headers "src/main/cpp/include"
+        }
+    }
+}
+
+dependencies {
+//    implementation project(":lib_prefab_static")
+}

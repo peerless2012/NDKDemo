@@ -24,3 +24,9 @@
 ### NDK provider and beneficiary
 * Provider, provide ndk header file and `.so`.
 * Beneficiary, use other ndk header and `.so` file.
+
+### [prefab](https://google.github.io/prefab/example-workflow.html)
+* [C/C++ modules may now reference other C/C++ modules in the same project](https://developer.android.com/studio/releases/gradle-plugin?buildsystem=ndk-build#cpp-references)
+* [Android Studio fails on Gradle sync with two prefab modules which depend on each other](https://issuetracker.google.com/issues/222811915)
+* [PrefabPackagingOptions](https://developer.android.com/reference/tools/gradle-api/7.1/com/android/build/api/dsl/PrefabPackagingOptions#headerOnly:kotlin.Boolean)
+* [PrefabPackagingOptions headers is not good enough](https://issuetracker.google.com/issues/168994860)
