@@ -7,6 +7,18 @@ apply from:'../native_build.gradle'
 // Gradle Module Build Order
 // https://stackoverflow.com/a/42349993/3769941
 preBuild.dependsOn(":lib_module_provider:build")
+android {
+
+    productFlavors {
+
+        'ndk' {
+            packagingOptions {
+                exclude '**/libProvider.so'
+            }
+        }
+    }
+    
+}
 
 dependencies {
     implementation project(':lib_module_provider')

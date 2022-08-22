@@ -3,3 +3,11 @@ plugins {
 }
 apply from:'../library_build.gradle'
 //apply from:'../native_build.gradle'
+
+android {
+    // https://github.com/google/prefab
+    // https://developer.android.com/studio/build/native-dependencies?hl=zh-cn&buildsystem=ndk-build
+//    buildFeatures {
+//        prefabPublishing true
+//    }
+}

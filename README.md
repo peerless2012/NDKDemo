@@ -26,3 +26,7 @@
 ##### Bug
 * prefab not support ndk-build current now.
 * prefab header only support one folder current now.
+
+### NDK provider and beneficiary
+* Provider, provide ndk header file and `.so`.
+* Beneficiary, use other ndk header and `.so` file.

@@ -11,12 +11,6 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    // https://github.com/google/prefab
-    // https://developer.android.com/studio/build/native-dependencies?hl=zh-cn&buildsystem=ndk-build
-    buildFeatures {
-        prefab true
-    }
-
     flavorDimensions "build"
 
     productFlavors {

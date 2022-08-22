@@ -13,6 +13,6 @@ LOCAL_SRC_FILES := \
 			$(wildcard $(LOCAL_PATH)/src/*.cpp) \
 		)
 
-LOCAL_SHARED_LIBRARIES := log
+LOCAL_LDLIBS := -llog
 
 include $(BUILD_SHARED_LIBRARY)
